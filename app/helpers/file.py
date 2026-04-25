@@ -33,13 +33,14 @@ def append_json(
     unique_key: str = "id"
 ) -> None:
     data = read_json(file_name)
+
     if should_be_unique:
-        if any(entry.get(unique_key) == item.get(unique_key) for entry in data):
-            raise ValueError(f"Duplicate entry for key: {unique_key}")
+        value = item.get(unique_key)
+        if value is None:
+            raise ValueError(f"missing unique key: {unique_key}")
+
+        if any(entry.get(unique_key) == value for entry in data):
+            raise ValueError(f"duplicate entry for key: {unique_key}")
 
     data.append(item)
     write_json(file_name, data)
-
-def exists(file_name: str, key: str, value) -> bool:
-    data = read_json(file_name)
-    return any(entry.get(key) == value for entry in data)

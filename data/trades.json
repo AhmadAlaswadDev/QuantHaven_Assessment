@@ -1,0 +1,24 @@
+[
+  {
+    "order_id": "e5b5c997-5a64-4e17-94a0-db1e10305e68",
+    "execution": "completed",
+    "symbol": "USD",
+    "side": "buy",
+    "qty": 10.0,
+    "price": 344.0,
+    "total": 3440.0,
+    "signal_id": "USD-buy-10.0-344.0",
+    "executed_at": "2026-04-25T10:36:08.805924+00:00"
+  },
+  {
+    "order_id": "ac8d2533-f63f-44b9-8d42-d09903b9f2ff",
+    "execution": "completed",
+    "symbol": "USD",
+    "side": "buy",
+    "qty": 10.0,
+    "price": 5.0,
+    "total": 50.0,
+    "signal_id": "USD-buy-10.0-5.0",
+    "executed_at": "2026-04-25T10:36:16.227479+00:00"
+  }
+]
