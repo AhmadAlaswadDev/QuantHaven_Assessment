@@ -3,3 +3,5 @@ uvicorn
 pydantic
 jinja2
 python-multipart
+yfinance
+pandas
